@@ -5,17 +5,6 @@ from datasets import load_dataset
 import os
 
 def download_and_preprocess_dataset(dataset_name: str, save_path: str, min_length: int = 1):
-    """
-    Downloads and preprocesses a dataset from Hugging Face and saves it as a CSV file.
-
-    Args:
-    - dataset_name (str): The name of the dataset to download.
-    - save_path (str): The path where the processed CSV file will be saved.
-    - min_length (int): The minimum length of conversations to keep.
-
-    Returns:
-    - None
-    """
     try:
         # Load the dataset from Hugging Face
         print(f"Loading dataset '{dataset_name}' from Hugging Face...")
