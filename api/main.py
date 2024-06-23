@@ -24,7 +24,7 @@ def handle_internal_server_error(error):
 
 @app.route("/")
 def home():
-    return "Welcome to the Empathic AI Scam Prevention API"
+    return "If humanity successfully builds AGI, how the hell are we gonna control it? In the meantime, I'm building this with the end goal of eventually helping me do shit while I'm operating my digital world. Starting out with an AI specializing in distraction management."
 
 @app.route("/start-stream", methods=["GET"])
 def start_stream():
