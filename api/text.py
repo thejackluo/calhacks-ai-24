@@ -224,6 +224,22 @@ if __name__ == '__main__':
 
 
 # plan for part 2
-# 1. Implement Langchain and GPT 4o Stage 1 (other classifer)
-# 2. stage 3: implement context and memory to the resopnse (context)
-# 3. stage 4: implement pscyhological feature generator
+"""
+stage 2: langchain and type (added complexity) (EASY)
+# Implement Langchain (to incorporate multiple models)
+# Implement a scam classifer and ensure that langchain works
+
+stage 3: implement context and memory to the resopnse (context)
+# Implement GPT 4o API to incorporate context information
+# add context to the post pipeline for better nuanced detection (the context could highlight 
+and make scams look more explict) (we can implement a live demo feature that shows how the model 
+gradually learns it is a scam through pyschological markesr)
+# use the memory to train the model and have it have reinforcement learning
+
+stage 2+: 
+# add fine tuning to the conversation classifer
+
+stage 3+: 
+# implement pyschological feature generator from a scratch
+# incorporating multiple models together
+"""
