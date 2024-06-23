@@ -21,7 +21,6 @@ CORS(app)
 client = HumeVoiceClient(HUME_API_KEY)
 
 # Flask 
-
 @app.errorhandler(500)
 def handle_internal_server_error(error):
     return jsonify({"error": "Internal Server Error", "details": str(error), "trace": traceback.format_exc()}), 500
@@ -31,7 +30,6 @@ def home():
     return "If humanity successfully builds AGI, how the hell are we gonna control it? In the meantime, I'm building this with the end goal of eventually helping me do shit while I'm operating my digital world. Starting out with an AI specializing in distraction management."
 
 # API
-
 @app.route("/engine/voice", methods=["POST"])
 def voice_classifier():
 
