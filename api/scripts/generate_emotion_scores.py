@@ -58,7 +58,7 @@ def add_emotion_scores_to_dataset(input_file_path, output_file_path):
     scores = {"impatience": [], "urgency": [], "guilt_tripping": [], "fear": []}
 
     for index, row in data.iterrows():
-        if index >= 5:  # Limit to processing only the first 5 rows
+        if index >= 150:  # Limit to processing only the first 5 rows
             break
         conversation = row['conversation']
         conversation_scores = {"impatience": 0, "urgency": 0, "guilt_tripping": 0, "fear": 0}
